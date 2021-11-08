@@ -44,6 +44,11 @@ group :development, :test do
   gem 'faker', '~> 2.19'
   gem 'pry-rails', '~> 0.3.9'
   gem 'rspec-rails', '~> 5.0'
+  gem 'rubocop', '~> 1.22'
+  gem 'rubocop-performance', '~> 1.12'
+  gem 'rubocop-rails', '~> 2.12'
+  gem 'rubocop-rake', '~> 0.6.0'
+  gem 'rubocop-rspec', '~> 2.6'
   gem 'shoulda-matchers', '~> 5.0'
 end
 
