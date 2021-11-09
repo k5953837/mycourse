@@ -29,6 +29,7 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 6.2'
   gem 'faker', '~> 2.19'
   gem 'pry-rails', '~> 0.3.9'
+  gem 'rails-controller-testing', '~> 1.0'
   gem 'rspec-rails', '~> 5.0'
   gem 'rubocop', '~> 1.22'
   gem 'rubocop-performance', '~> 1.12'
