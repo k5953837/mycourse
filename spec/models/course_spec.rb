@@ -41,6 +41,7 @@ RSpec.describe Course, type: :model do
     it { should define_enum_for(:category).with_values(Course.categories.keys) }
     it { should define_enum_for(:currency).with_values(Course.currencies.keys) }
     it { should define_enum_for(:status).with_values(Course.statuses.keys) }
+    it { should validate_url_of(:url) }
   end
 
   # Scopes specs

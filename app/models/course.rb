@@ -37,6 +37,7 @@ class Course < ApplicationRecord
   validates :category, inclusion: { in: categories.keys }
   validates :currency, inclusion: { in: currencies.keys }
   validates :status, inclusion: { in: statuses.keys }
+  validates :url, url: true
 
   # Callbacks
 
