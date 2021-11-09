@@ -20,5 +20,29 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  # Initial variables
+
+  # Associations specs
+  context 'Associations specs' do
+  end
+
+  # Callbacks specs
+  context 'Callbacks specs' do
+  end
+
+  # Validations specs
+  context 'Validations specs' do
+  end
+
+  # Scopes specs
+  context 'Scopes specs' do
+  end
+
+  # Class methods specs
+  context 'Class method specs' do
+  end
+
+  # Instance methods specs
+  context 'Instance method specs' do
+  end
 end
