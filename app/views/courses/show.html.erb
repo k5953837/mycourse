@@ -1,0 +1,42 @@
+<p>
+  <strong>Subject:</strong>
+  <%= @course.subject %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @course.price %>
+</p>
+
+<p>
+  <strong>Currency:</strong>
+  <%= @course.currency %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @course.category %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @course.status %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @course.url %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @course.description %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @course.duration %>
+</p>
+
+<%= link_to 'Edit', edit_course_path(@course) %> |
+<%= link_to 'Back', courses_path %>

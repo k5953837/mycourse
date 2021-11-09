@@ -22,5 +22,9 @@ FactoryBot.define do
     email { Faker::Internet.unique.email }
     password { Faker::Internet.unique.password }
     password_confirmation { password }
+
+    trait :with_admin do
+      role { 'admin' }
+    end
   end
 end
