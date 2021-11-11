@@ -36,7 +36,19 @@ module ApiV1
 
   class AuthorizationError < Error
     def initialize
-      super code: 2001, text: 'Authorization failed', status: 401
+      super code: 2001, text: 'Authorization Failed', status: 401
+    end
+  end
+
+  class MissingJwtToken < Error
+    def initialize
+      super code: 2002, text: 'Missing JWT Token', status: 403
+    end
+  end
+
+  class InvalidToken < Error
+    def initialize
+      super code: 2003, text: 'Invalid Token', status: 403
     end
   end
 end
