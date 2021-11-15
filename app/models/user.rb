@@ -35,6 +35,7 @@ class User < ApplicationRecord
   enum role: { general: 0, admin: 1 }
 
   # Association macros
+  has_many :orders, dependent: :destroy
 
   # Association through macros
 

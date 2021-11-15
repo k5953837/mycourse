@@ -26,6 +26,7 @@ RSpec.describe User, type: :model do
 
   # Associations specs
   context 'Associations specs' do
+    it { should have_many(:orders).dependent(:destroy) }
   end
 
   # Callbacks specs
