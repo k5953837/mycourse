@@ -12,10 +12,7 @@ module ApiV1
 
         # Decoded the token and find current_user
         decoded_token = Jwt::Decoder.new(token).decode!
-        user = authenticate_user(decoded_token)
-
-        # Return current_user and decoded token
-        [user, decoded_token]
+        authenticate_user(decoded_token)
       end
 
       private

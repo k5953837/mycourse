@@ -51,4 +51,16 @@ module ApiV1
       super code: 2003, text: 'Invalid Token', status: 403
     end
   end
+
+  class OfflineCourse < Error
+    def initialize
+      super code: 2004, text: 'Offline Course', status: 403
+    end
+  end
+
+  class ExistAvailableCourse < Error
+    def initialize
+      super code: 2005, text: 'Exist Available Course', status: 403
+    end
+  end
 end

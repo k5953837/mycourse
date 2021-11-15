@@ -7,8 +7,8 @@ describe '/api/v1/login' do
   let(:original_params) { { email: email, password: password } }
   let(:params) { original_params }
 
-  def api_call(params)
-    post '/api/v1/login', params: params
+  def api_call(params, headers = {})
+    post '/api/v1/login', params: params, headers: headers
   end
 
   context 'negative tests' do

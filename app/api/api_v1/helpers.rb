@@ -1,11 +1,12 @@
 module ApiV1
   module Helpers
-    def authenticate!
-      current_user or raise AuthorizationError
+    def current_user
+      request = ::Grape::Request.new(env)
+      @current_user ||= ApiV1::Auth::Authenticator.new(request).authenticate!
     end
 
-    def current_user
-      @current_user ||= env['api_v1.user']
+    def authenticate!
+      error!('401 Unauthorized', 401) unless current_user
     end
   end
 end

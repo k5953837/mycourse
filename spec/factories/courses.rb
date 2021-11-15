@@ -20,7 +20,7 @@ FactoryBot.define do
     price { Faker::Number.decimal }
     currency { Course.currencies.keys.sample }
     category { Course.categories.keys.sample }
-    status { Course.statuses.keys.sample }
+    status { 'online' }
     url { Faker::Internet.url }
     description { Faker::Lorem.paragraph }
     duration { Faker::Number.between(from: 1, to: 30) }

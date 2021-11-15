@@ -4,12 +4,11 @@ module ApiV1
 
     # Includes
     include ApiV1::ExceptionHandlers
-    # Uses
-    use ApiV1::Auth::Middleware
     # Helpers
     helpers ::ApiV1::Helpers
     # Mounts
-    mount Ping
     mount Login
+    mount Ping
+    mount PurchaseCourse
   end
 end

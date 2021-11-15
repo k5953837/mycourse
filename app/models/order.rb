@@ -30,7 +30,7 @@ class Order < ApplicationRecord
   # Constants
 
   # Attributes related macros
-  enum category: Course::categories
+  enum category: Course.categories
 
   # Association macros
   belongs_to :user
@@ -39,7 +39,7 @@ class Order < ApplicationRecord
 
   # Validation macros
   validates :category, :expired_at, :snapshot, :subject, presence: true
-  validates :category, inclusion: { in: Course::categories.keys }
+  validates :category, inclusion: { in: Course.categories.keys }
 
   # Callbacks
   before_create :set_expired_at
