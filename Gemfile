@@ -6,7 +6,12 @@ ruby '2.7.2'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'coffee-rails', '~> 4.2'
 gem 'devise', '~> 4.8'
+gem 'grape', '~> 1.6'
+gem 'grape-entity', '~> 0.10.1'
+gem 'grape-swagger', '~> 1.4'
+gem 'grape-swagger-rails', '~> 0.3.1'
 gem 'jbuilder', '~> 2.5'
+gem 'jwt', '~> 2.3'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
@@ -36,6 +41,7 @@ group :development, :test do
   gem 'rubocop-rails', '~> 2.12'
   gem 'rubocop-rake', '~> 0.6.0'
   gem 'rubocop-rspec', '~> 2.6'
+  gem 'shoulda-callback-matchers', '~> 1.1'
   gem 'shoulda-matchers', '~> 5.0'
 end
 
