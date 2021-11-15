@@ -11,5 +11,12 @@ module ApiV1
     mount OrderList
     mount Ping
     mount PurchaseCourse
+
+    # Swagger documentation
+    add_swagger_documentation(
+      mount_path: 'swagger_doc',
+      hide_format: true,
+      hide_documentation_path: true
+    )
   end
 end
