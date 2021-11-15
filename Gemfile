@@ -7,6 +7,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'coffee-rails', '~> 4.2'
 gem 'devise', '~> 4.8'
 gem 'grape', '~> 1.6'
+gem 'grape-entity', '~> 0.10.1'
 gem 'jbuilder', '~> 2.5'
 gem 'jwt', '~> 2.3'
 gem 'pg', '>= 0.18', '< 2.0'
