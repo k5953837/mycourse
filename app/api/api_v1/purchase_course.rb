@@ -15,7 +15,7 @@ module ApiV1
         raise OfflineCourse if course.offline?
 
         # Check if course is available for user
-        order = @current_user.orders.available.find_by(subject: course.subject)
+        order = current_user.orders.available.find_by(subject: course.subject)
         raise ExistAvailableCourse if order.present?
 
         # Create order for user

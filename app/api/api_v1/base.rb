@@ -8,6 +8,7 @@ module ApiV1
     helpers ::ApiV1::Helpers
     # Mounts
     mount Login
+    mount OrderList
     mount Ping
     mount PurchaseCourse
   end
