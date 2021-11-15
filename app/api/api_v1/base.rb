@@ -10,5 +10,6 @@ module ApiV1
     helpers ::ApiV1::Helpers
     # Mounts
     mount Ping
+    mount Login
   end
 end

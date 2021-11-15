@@ -5,7 +5,7 @@ module ApiV1
         rescue_from Grape::Exceptions::ValidationErrors do |e|
           rack_response({
             error: {
-              code: 1001,
+              code: e.status,
               message: e.message
             }
           }.to_json, e.status)

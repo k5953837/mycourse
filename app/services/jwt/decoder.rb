@@ -1,5 +1,5 @@
 module Jwt
-  class Decoder
+  class Decoder < Jwt::Base
     def initialize(token)
       @token = token
     end

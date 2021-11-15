@@ -1,5 +1,5 @@
 module Jwt
-  class Encoder
+  class Encoder < Jwt::Base
     def initialize(user)
       @user = user
     end
